@@ -1,4 +1,4 @@
-<img src="https://image.flaticon.com/icons/png/512/5117/5117142.png" width="150px" title="Default RATING" alt="STAR">
+<img src="https://img.icons8.com/ios/100/000000/console.png"/>
 
 # Welcome to NGX-LOGS!
 
