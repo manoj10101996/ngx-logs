@@ -1,50 +1,52 @@
 <img src="https://image.flaticon.com/icons/png/512/5117/5117142.png" width="150px" title="Default RATING" alt="STAR">
 
-# Console input / output strings or any message strings at browser console.
+# Welcome to NGX-LOGS!
 
-> Managing logs for developer reference
+ Console input / output strings or any message strings at browser console.
+ The  **`console.log()`**  method outputs a message to the web console. The message may be a single string (with optional substitution values), or it may be any one or more JavaScript objects.
 
-# Preview demo
 
-This preview was generated with [Stackblitz](https://stackblitz.com/edit/ngx-logs)
+## Preview demo
+
+This preview was generated with [CODESANDBOX](https://codesandbox.io/s/ngx-logs-94olx)
+
 
 ## Import
 
 Import the module on your `app.module.ts` file as follow.
-
 > import { NgxLogsModule } from "ngx-logs";
 
 Then import the module as follow on imports array
-
 > NgxLogsModule
+
 
 ## Using
 
 After importing this library with `npm install ngx-logs`, go to the component which is declared under `app.module.ts` and integrate as below.
 
-## NGX LOGS MODULE
-> constructor(private ngxLogs: NgxLogsService) { } - Use reference for logs service in constructor and import it respectively
- 
-## METHODS
-> this.ngxLogs.profile(); - Displays current profile from browser page opened for reference as Profile with counter
 
-> this.ngxLogs.directory(); - Logs current page info with all require informations (URL, PATH etc.)
+##  NGX LOGS MODULE
 
-> this.ngxLogs.clear(); - Clears the entire console logs
+> constructor(private ngxLogs: NgxLogsService) { } 
 
-> this.ngxLogs.log('Log Message from NgxLogsService'); - Logs standard custom strings as console logs
+ Use reference for logs service in constructor and import it respectively at any component
 
-> this.ngxLogs.warn('Warning Message from NgxLogsService'); - Logs Warning meesage for custom strings as console logs
+## Methods
 
-> this.ngxLogs.info('Info Message from NgxLogsService'); - Same as console logs
+This are the methods available with ngx-logs use it as per your requirement:
 
-> this.ngxLogs.error('Error Message from NgxLogsService'); - Logs Error meesage for custom strings as console logs
-
-> this.ngxLogs.memory(); - Logs memeory info
-
-> this.ngxLogs.counter('Value'); - Console logs for iterations with index value 
-
-> this.ngxLogs.table(array) - Displays array or json input as a table in console
+|                |Method						 |Usage                        |
+|----------------|-------------------------------|-----------------------------|
+|Profile		 |`this.ngxLogs.profile();`      |Displays current profile from browser page 		  opened for reference as Profile with counter- *Very useful for developing*                        |
+|Directory       |`this.ngxLogs.directory();`            |Logs current page info with all require information's (URL, PATH etc.)          |
+|Clear 			 |`this.ngxLogs.clear();`		|Clears the entire console logs|
+|Log			 |`this.ngxLogs.log('Log Message from NgxLogsService');`	|Logs standard custom strings as console logs
+|Warn			 |`this.ngxLogs.warn('Warning Message from NgxLogsService');` | Logs Error message for custom strings as console logs
+|Info			 |`this.ngxLogs.info('Info Message from NgxLogsService')` |Same as console logs
+|Error			 |`this.ngxLogs.error('Error Message from NgxLogsService');`|Logs Error message for custom strings as console logs
+|Memory			 |`this.ngxLogs.memory();`	|Logs memory info
+|Counter 		 |`this.ngxLogs.counter('Value');`|Console logs for iterations with index value - Can be used with for , forin, foreach, do..while
+|Table / JSON    |`this.ngxLogs.table(array)`| Displays array or JSON of array/dictionary input as a table in console
 
 
 ## Angular version
